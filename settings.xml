@@ -186,7 +186,7 @@ under the License.
    |
    |-->
   <profiles>
-    
+
     <profile>
     <id>MuleEnterpriseRepository</id>
     <activation>
@@ -208,7 +208,7 @@ under the License.
       </repository>
 
       <repository>
-      <id>mulesoft-releases</id>
+      <id>mulesoft-release</id>
       <name>MuleSoft Releases Repository</name>
       <url>http://repository.mulesoft.org/releases/</url>
       <layout>default</layout>
