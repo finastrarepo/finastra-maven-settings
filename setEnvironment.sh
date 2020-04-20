@@ -8,7 +8,7 @@ case "$TRAVIS_BRANCH" in
         export anypoint_environment="Development"
         export anypoint_application_environment="dev"
         export anypoint_application_name_appender="-dev"
-        export anypoint_maven_additional_parameters=""
+        export anypoint_maven_additional_parameters="test"
     ;;
     "integrate")
         export anypoint_environment="SIT"
