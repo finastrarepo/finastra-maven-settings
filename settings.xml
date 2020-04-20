@@ -133,8 +133,8 @@ under the License.
     -->
      <server>
       <id>MuleEnterpriseRepository</id>
-      <username>${env.NEXUS_USERNAME}</username>
-      <password>${env.NEXUS_PASSWORD}</password>
+      <username>${env.mule_ee_username}</username>
+      <password>${env.mule_ee_password}</password>
     </server>
   </servers>
 
