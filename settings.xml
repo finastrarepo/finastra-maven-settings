@@ -214,6 +214,12 @@ under the License.
       <layout>default</layout>
     </repository>
     <repository>
+    <id>mulesoft-maven</id>
+    <name>MuleSoft Maven API Repository</name>
+    <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+    <layout>default</layout>
+  </repository>
+    <repository>
       <id>mulesoft-snapshots</id>
       <name>MuleSoft Snapshots Repository</name>
       <url>https://repository.mulesoft.org/snapshots/</url>
