@@ -131,10 +131,15 @@ under the License.
       <passphrase>optional; leave empty if not used.</passphrase>
     </server>
     -->
-     <server>
+    <server>
       <id>MuleEnterpriseRepository</id>
       <username>${env.mule_ee_username}</username>
       <password>${env.mule_ee_password}</password>
+    </server>
+    <server>
+      <id>MuleMavenRepository</id>
+      <username>${env.anypoint_username}</username>
+      <password>${env.anypoint_password}</password>
     </server>
   </servers>
 
@@ -214,12 +219,6 @@ under the License.
       <layout>default</layout>
     </repository>
     <repository>
-    <id>mulesoft-maven</id>
-    <name>MuleSoft Maven API Repository</name>
-    <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
-    <layout>default</layout>
-  </repository>
-    <repository>
       <id>mulesoft-snapshots</id>
       <name>MuleSoft Snapshots Repository</name>
       <url>https://repository.mulesoft.org/snapshots/</url>
@@ -272,6 +271,22 @@ under the License.
           <url> https://repository.mulesoft.org/nexus/content/repositories/public </url>
         </pluginRepository>
       </pluginRepositories>
+  </profile>
+
+  <profile>
+    <id>MuleMavenRepository</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+
+    <repositories>
+        <repository>
+          <id>mulesoft-maven</id>
+          <name>MuleSoft Maven API Repository</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+          <layout>default</layout>
+        </repository>
+    </repositories>
   </profile>
 
     <!-- profile
