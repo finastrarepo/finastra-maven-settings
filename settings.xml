@@ -137,7 +137,7 @@ under the License.
       <password>${env.mule_ee_password}</password>
     </server>
     <server>
-      <id>MuleMavenRepository</id>
+      <id>mulesoft-maven</id>
       <username>${env.anypoint_username}</username>
       <password>${env.anypoint_password}</password>
     </server>
