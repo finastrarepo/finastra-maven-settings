@@ -22,6 +22,12 @@ case "$TRAVIS_BRANCH" in
         export anypoint_application_name_appender="-uat"
         export anypoint_maven_additional_parameters="-DskipMunitTests"
     ;;
+    "staging")
+        export anypoint_environment="STAGING"
+        export anypoint_application_environment="stg"
+        export anypoint_application_name_appender="-stg"
+        export anypoint_maven_additional_parameters="-DskipMunitTests"
+    ;;
     "master")
         export anypoint_environment="Production"
         export anypoint_application_environment="prod"
